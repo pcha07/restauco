@@ -1,4 +1,5 @@
 import bbqcwrap from "../assets/bbqcwrap.jpeg";
+import bbqcwrapcopy from "../assets/bbqcwrap-copy.jpg";
 import greekwrap from "../assets/greek-wrap.jpeg";
 import veggiewrap from "../assets/veggie-wrap.jpeg";
 import steakricewrap from "../assets/steakricewrap.jpeg";
@@ -16,7 +17,7 @@ export const sampleData = [
     title: "Bbq chicken wrap",
     price: 10.5,
     category: "wraps",
-    img: bbqcwrap,
+    img: bbqcwrapcopy,
   },
   {
     title: "Greek wrap",
@@ -38,7 +39,7 @@ export const sampleData = [
   },
 
   {
-    title: "Butter chicken & rice",
+    title: "Butter chicken",
     price: 13.0,
     category: "bowls",
     img: buttercrice,

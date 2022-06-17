@@ -4,7 +4,7 @@ const MenuItem = ({ title, price, img }) => {
       <img
         src={img}
         alt={title}
-        className="h-40 object-contain sm:object-cover md:h-full rounded-md w-full"
+        className="h-40 object-contain sm:object-cover sm:h-full rounded-md w-full"
       />
       <h1 className="font-semibold text-center">{title}</h1>
       <h1 className="font-semibold text-center">$ {price}</h1>
