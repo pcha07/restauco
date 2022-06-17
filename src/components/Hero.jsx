@@ -1,10 +1,9 @@
-import { Link, animateScroll as scroll } from "react-scroll";
 import Food from "../assets/asianfood.jpeg";
 import Dining from "../assets/dining.jpeg";
 
 const Hero = () => {
   return (
-    <section class="flex flex-col lg:flex-row items-center justify-evenly w-full lg:justify-between bg-orange-100 py-3">
+    <section id="menu" className="flex flex-col lg:flex-row items-center justify-evenly w-full lg:justify-between bg-orange-100 py-3 mt-14">
       <div className="flex flex-col items-center justify-center p-2 basis-[45%]">
         <h1 className="text-black font-bold text-4xl">Get Comfy</h1>
         <h1 className="text-black font-bold text-3xl">Order In</h1>

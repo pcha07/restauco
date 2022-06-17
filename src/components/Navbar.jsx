@@ -1,4 +1,5 @@
 import Logo from "../assets/restauco-logo.jpeg";
+import { Link } from "react-scroll";
 
 import { useState } from "react";
 
@@ -9,13 +10,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="fixed top-0 right-0 left-0 z-50">
       <nav className="bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center justify-between">
               <div className="flex-shrink-0 w-12">
-                <img src={Logo} className="rounded-md" />
+                <img src={Logo} className="rounded-md cursor-pointer" />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-center justify-center space-x-4">
@@ -26,13 +27,15 @@ const Navbar = () => {
                     Dashboard
                   </a>
 
-                  <a
+                  {/* <a
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Menu
-                  </a>
-
+                  </a> */}
+                  <Link to="menu">
+                  <p className="cursor-pointer text-white">Menu</p>
+                  </Link>
                   <a
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -45,6 +48,13 @@ const Navbar = () => {
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Reserve Table
+                  </a>
+
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    About
                   </a>
 
                   <a
@@ -141,6 +151,13 @@ const Navbar = () => {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Reserve Table
+                </a>
+
+                <a
+                  href="#"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  About
                 </a>
 
                 <a

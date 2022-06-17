@@ -21,7 +21,7 @@ const Menu = () => {
       </div>
 
       {/* Menu categories */}
-      <div className="max-w-[85%] mx-auto flex  sm:flex-nowrap items-center justify-center space-x-4 p-2.5">
+      <div name="menu" className="max-w-[85%] mx-auto flex  sm:flex-nowrap items-center justify-center space-x-4 p-2.5">
         {/* Wraps */}
         <div
           className={`rounded-lg flex flex-col items-center justify-center basis-[30%] shadow-xl space-y-2 cursor-pointer hover:scale-105 transition ease-in-out p-2 ${
