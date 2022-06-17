@@ -8,7 +8,6 @@ import MenuItem from "./MenuItem";
 
 const Menu = () => {
   const [menuCategory, setMenuCategory] = useState("wraps");
-  console.log(menuCategory);
 
   return (
     <section className="w-full bg-white flex flex-col items-center mt-16 space-y-6">
